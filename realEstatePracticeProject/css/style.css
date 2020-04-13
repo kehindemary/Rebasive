@@ -48,8 +48,10 @@ header{
 }
  a:hover , a:focus{
      color: rgb(215, 216, 182);
+     padding: 0;
+
  }
- .current-page{
+ .nav-link a:hover, .nav-link a:focus{
     border-bottom: 2px solid white;
     padding: 1px;
  }
@@ -176,9 +178,7 @@ color: white;
     .nav-link li{
         width: 50%;
     }
-    .current-page{
-        border-bottom:0;
-     }
+  
     .nav-logo{
         margin: 0 auto;
     }
@@ -194,12 +194,15 @@ color: white;
          width: 100%;
       }
       header h1{
-        margin: 2em 1.5em;
+        margin: 5em 1.5em;
         font-size: 1.5rem;
     }
     .footer{
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        font-size: 0.75em;
+        margin-top: 3em;
     }
     .footer-links{
         width: 50%;
@@ -213,10 +216,16 @@ color: white;
         margin: 0 auto;
         align-content: center;
 
+
     }
     .footer-about{
         width: 50%;
         align-content: center;
+
+    }
+    .btn-icon-only i{
+        color: white;
+        padding-right: 0.5em;
     }
     }
 
