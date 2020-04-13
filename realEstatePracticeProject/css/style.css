@@ -27,18 +27,24 @@ header{
     font-weight: 600;
     justify-content: center;
     padding: 3em 0;
+    margin: 0;
+    font-size: 0.75em;
 }
 .nav-link ul{
     display: flex;
+    padding: 0;
+    margin: 0;
 }
 .nav-link li{
     list-style-type: none;
-    padding: 3em 1.5em;
+    padding: 3em 2em;
 }
 .nav-link a{
     text-decoration: none;
     color: white;
-    padding: .25em 0;
+}
+.nav-logo img{
+    width: 7vw;
 }
  a:hover , a:focus{
      color: rgb(215, 216, 182);
@@ -48,7 +54,7 @@ header{
  }
  header h1{
      color: white;
-     margin: 9em 2em;
+     margin: 10em 2.5em;
  }
  /*
 ====================
@@ -95,11 +101,13 @@ color: white;
 ====================
 */
 .footer{
-    width: 90%;
-    margin: 3em auto;
-    color:rgba(red, green, rgb(234, 234, 243), .75);
+    width: 100%;
     background: rgb(116, 115, 113);
-    padding: 1em;
+}
+.footer-content{
+    margin: 0 auto;
+    margin-top: 3em;
+    padding: 4em 1em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -111,18 +119,26 @@ color: white;
 .social-media{
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 25%;
     margin: 0 auto;
+    line-height: 1.5em;
+    padding:2em;
 }
-.social-media span{
-padding: 1.5em;
+.btn-icon-only{
+    padding:0 2em;
+}
+.btn-icon-only i{
+    color: white;
 }
 .footer-about{
     display: flex;
     flex-direction: column;
     width: 20%;
-    margin: 2em 3em;
     margin: 0 auto;
+}
+.footer-about img{
+    width: 7vw;
+    padding-bottom: 1.5em;
 }
 .footer-text{
     padding: 0 auto; 
@@ -136,12 +152,13 @@ padding: 1.5em;
     border-left: 1px solid white;
     width: 30%;
     margin: 0 auto;
-    padding: 0 2em;
+    padding: 2em;
+    line-height: 1.5em;
     }
 
  /* ===========================================
     Media query
- Extra small devices (phones, 600px and down)
+    Extra small devices (phones, 600px and down)
     ===========================================
   */
 
