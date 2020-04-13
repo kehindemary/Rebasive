@@ -51,6 +51,7 @@ header{
  }
  .current-page{
     border-bottom: 2px solid white;
+    padding: 1px;
  }
  header h1{
      color: white;
@@ -120,15 +121,15 @@ color: white;
     display: flex;
     flex-direction: column;
     width: 25%;
-    margin: 0 auto;
+    margin: 2em auto;
     line-height: 1.5em;
-    padding:2em;
 }
-.btn-icon-only{
-    padding:0 2em;
+.social-media p{
+    margin-top: 0;
 }
 .btn-icon-only i{
     color: white;
+    padding-right: 2em;
 }
 .footer-about{
     display: flex;
@@ -146,15 +147,19 @@ color: white;
 .footer a{
     text-decoration: none;
 }
+
 .footer-links{
     display: flex;
     flex-direction: column;
-    border-left: 1px solid white;
     width: 30%;
-    margin: 0 auto;
-    padding: 2em;
+    margin: 2em auto;
     line-height: 1.5em;
+    padding-left: 2em;
+    border-left: 2px solid white;
     }
+.footer-links p {
+    margin-top: 0;
+}
 
  /* ===========================================
     Media query
