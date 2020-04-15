@@ -3,26 +3,38 @@
 }
 body{
     margin: 0;
+    padding: 0;
     font-family: 'Roboto', sans-serif;
 }
 .container{
     width: 100%;
 }
-.header-home{
-    background-image: url("https://res.cloudinary.com/marykaystuff/image/upload/v1586457397/bk8h24pxsxx1hggbqdin.svg");
+
+.header{
+    background-image: url("https://res.cloudinary.com/marykaystuff/image/upload/v1586798578/ao22gsf3wwvgmvhvdkzo.svg");
     background-repeat: no-repeat;
     background-color: rgb(197, 195, 183);
     background-blend-mode: multiply;
     background-size: cover;
     height: 100vh;
 }
-.header-fitings{
-    background-image: url("https://res.cloudinary.com/marykaystuff/image/upload/v1586798439/evn1auvvbwoyekdtjyqh.svg");
-    background-repeat: no-repeat;
-    background-color: rgb(245, 240, 212);
-    background-size: cover;
-    height: 100vh;
+header .btn{
+    border: 2px solid white;
+    color:white;
+    font-size: 1rem;
+    padding: 1em;
+    margin: 1em 0;
+    display: block;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
 }
+header h1{
+    margin: 6em 4em;
+    font-size: 2em;
+    color: white;
+}
+
 /*
 ====================
     Navbar
@@ -53,7 +65,7 @@ body{
 .nav-logo img{
     width: 7vw;
 }
- a:hover , a:focus{
+ .nav-link a:hover , .nav-link a:focus{
      color: rgb(215, 216, 182);
      padding: 0;
 
@@ -62,55 +74,90 @@ body{
     border-bottom: 2px solid white;
     padding: 1px;
  }
- .header-home h1{
-     color: white;
-     margin: 10em 2.5em;
- }
- .header-fitings h1{
-    color: white;
-    margin: 3.5em 2em;
-    font-size: 4rem;
-    font-weight: 900;
-}
+ 
  /*
 ====================
     Layout
 ====================
 */
  .content{
-     width: 90%;
-     margin: 0 auto;
- }
- 
+    width: 100%;
+    margin-top: 2.5em;
+}
  .card-group{
     display: flex;
     justify-content: space-between;
-    margin: 1em 0;
+    padding:  0;
+    margin: 0;
+ }
+ .card-group-1{
+    display: flex;
+    justify-content: space-between;
  }
  .card{
-     width: 23%;
- }
- .card-img{
-     width: 100%;
+    width: 55%;
+    height: 100%;
+    padding:  0;
  }
  .card-text{
-     font-weight: 300;
-     font-size: 1em;
+     margin: 10em 5em;
+     width: 38%;
  }
-.btn{
-    background: rgb(160, 111, 6);
-    color: white;
+ .card-text-2{
+    padding: 7em;
+    width: 35%;
+}
+.card-text-2 p{
+font-weight: 600;
+font-size: 1.1rem;
+text-align: center;
+padding: 0;
+}
+.card-text-2 .btn{
+    background:  rgb(172, 136, 59);
+    color:white;
     font-size: 1rem;
-    padding: 1em 1.8em;
+    padding: .90em 1em;
+    margin: 0 auto;
+    display: block;
     text-align: center;
     text-decoration: none;
-    display: block;
-    margin: 0 auto;
-    max-width: 150px;
+    max-width: 120px;
+
 }
-p{
-color: white;
+ .card-text h2{
+     font-weight: 600;
+     font-size: 3rem;
+ }
+ .card-text p{
+     margin: 0;
+     font-weight: 300;
+     font-size: 1em;
+     color:black;
+ }
+.btn{
+    border: 2px solid rgb(172, 136, 59);
+    color: black;
+    font-size: 1rem;
+    padding: 1em 1.8em;
+    margin: 3em 0;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
 }
+.card-left{
+    width: 30%;
+    height: 100%;
+}
+.text-left{
+    background: rgb(172, 136, 59);
+    color: white;
+}
+.text-left p{
+    padding: 2em;
+    margin: 0;
+}
+
 /*
 ====================
     Navbar
@@ -119,6 +166,9 @@ color: white;
 .footer{
     width: 100%;
     background: rgb(116, 115, 113);
+}
+.footer p{
+    color: white;
 }
 .footer-content{
     margin: 0 auto;
@@ -162,7 +212,6 @@ color: white;
 .footer a{
     text-decoration: none;
 }
-
 .footer-links{
     display: flex;
     flex-direction: column;
@@ -198,18 +247,37 @@ color: white;
     header{
         background-size: cover;
         background-position: center; 
-        margin-bottom: 5em;
+        margin-bottom: 2em;
       }
       .card-group{
           flex-direction: column;
       }
+      .card-group-1{
+        flex-direction: column;
+     }
       .card{
          width: 100%;
       }
-      header h1{
-        margin: 5em 1.5em;
-        font-size: 1.5rem;
+      .card-text{
+        width: 100%;
+        margin: 3em 2em;
     }
+    .card-text p{
+        padding-right: 3em;
+    }
+      header h1{
+        margin: 4em 1.5em;
+        font-size: 2em;
+        color: white;
+    }
+    .card-left{
+        width: 100%;
+    }
+    .card-text-2{
+        width: 100%;
+        text-align: center;
+    }
+    
     .footer{
         display: flex;
         flex-direction: column;
@@ -228,8 +296,6 @@ color: white;
         width: 50%;
         margin: 0 auto;
         align-content: center;
-
-
     }
     .footer-about{
         width: 50%;
