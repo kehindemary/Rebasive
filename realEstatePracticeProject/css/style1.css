@@ -22,7 +22,7 @@ header .btn{
     border: 2px solid white;
     color:white;
     font-size: 1rem;
-    padding: 1em;
+    padding: 0 1em;
     margin: 1em 0;
     display: block;
     width: 120px;
@@ -30,9 +30,10 @@ header .btn{
     text-decoration: none;
 }
 header h1{
-    margin: 6em 4em;
+    margin: 5em 4em;
     font-size: 2em;
     color: white;
+    line-height: 1.5em;
 }
 
 /*
