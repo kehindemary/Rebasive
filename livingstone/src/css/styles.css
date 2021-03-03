@@ -1,0 +1,819 @@
+html {
+    overflow-x: hidden;
+}
+  
+body {
+    margin: 0;
+    line-height: 1.35;
+    font-family: lt-font;
+    overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+@font-face {
+    font-family: lt-font;
+    src: url(./fonts/GT-Walsheim-Regular-Trial.woff2);
+}
+
+@font-face {
+    font-family: lt-font-2;
+    src: url(./fonts/GT-Walsheim-Medium-Trial.woff2);
+}
+
+@font-face {
+    font-family: lt-font-3;
+    src: url(./fonts/GT-Walsheim-Light-Trial.woff2);
+}
+
+/* Typography */
+
+.intro-text {
+    margin: 0;
+    font-size: 46px;
+    font-family: 'lt-font';
+    -webkit-text-stroke: 0.1px #99182A;
+    line-height: 47px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    display: grid;
+}
+
+.intro-paragraph {
+    text-align: center;
+    width: 272px;
+    justify-self: center;
+    margin: -16px 0 0;
+    color: #fff;
+    line-height: 21px;
+    font-weight: 600;
+    font-family: 'lt-font-3';
+    height: 74px;
+}
+.slide-col-title {
+    font-family: 'lt-font-2';
+    color: #3E3E3E;
+    text-transform: capitalize;
+    margin-top: 3em;
+    text-align: center;
+    font-size: 20px;
+}
+
+.slide-paragraph {
+    font-family: 'lt-font';
+    font-weight: 400;
+    color: #626262;
+    display: none;
+    font-size: 18px;
+    text-align: center;
+    width: 345px;
+}
+
+.speed {
+    background-image: url(https://cdn.rebasive.net/livingstone-templeton/speed-line.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 102px;
+    width: 128px;
+    display: block;
+    justify-self: center;
+}
+
+.label-intro-text {
+    margin: 13px 0 0;
+    font-family: 'lt-font-2';
+    color: #3E3E3E;
+    text-align: center;
+    line-height: 30px;
+    text-transform: capitalize;
+    padding: 0 38px;
+}
+
+.story-paragraph {
+    font-family: 'lt-font';
+    font-size: 14px;
+    font-weight: 400;
+    color: #626262;
+    line-height: 170%;
+    text-align: center;
+    margin: 13px 0 0;
+}
+
+.learn-more-link {
+    font-family: 'lt-font';
+    font-weight: 400;
+    color: #99182A;
+    margin-top: 17px;
+    font-size: 20px;
+    text-underline-position: from-font;
+}
+
+.companies-paragraph {
+    margin: 21px 0 0;
+    color: #626262;
+    font-family: 'lt-font';
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.companies-learn {
+    background: #828282;
+    text-decoration: none;
+    width: 184px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    justify-self: center;
+    border-radius: 6px;
+    margin: 15px 0 24px;
+}
+
+.intro-title {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-family: lt-font-2;
+    color: #9F2122;
+    text-transform: capitalize;
+    width: 100%;
+    justify-content: center;
+}
+
+.intro-title:before {
+    content: "";
+    display: block;
+    width: 50px;
+    margin-right: 8px;
+    height: 0px;
+    border-top: 2px solid #9F2122;
+    border-image: linear-gradient(to right, #fff 0%, #9F2122 150%);
+    border-image-slice: 1;
+}
+
+.intro-title:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 0px;
+    margin-left: 8px;
+    border-top: 2px solid #9F2122;
+    border-image: linear-gradient(to left, #fff 0%, #9F2122 150%);
+    border-image-slice: 1;
+}
+
+.how-intro-title {
+    color: #fff;
+}
+
+.how-intro-title:before {
+    border-top: 2px solid #fff;
+    border-image: linear-gradient(to right, #000 0%, #fff 80%);
+    border-image-slice: 1;
+    margin-right: 14px;
+}
+
+.how-intro-title:after {
+    border-top: 2px solid #fff;
+    border-image: linear-gradient(to left, #000 0%, #fff 80%);
+    border-image-slice: 1;
+    margin-left: 14px;
+}
+
+.how-label-intro-text {
+    color: #fff;
+    margin: 19px 0 0;
+    line-height: 37px;
+}
+
+.how-block-text {
+    font-family: 'lt-font-3';
+    text-transform: capitalize;
+    margin: 11px 0 0;
+    font-size: 16px;
+}
+
+.how-paragraph {
+    margin: 0;
+    font-family: 'lt-font-3';
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.achievements-intro-title{
+    color: aliceblue;
+}
+
+.achievements-intro-title:before {
+    border-top: 2px solid #fff;
+    border-image: linear-gradient(to right, #000 0%, #fff 80%);
+    border-image-slice: 1;
+    margin-right: 14px;
+    width: 60px;
+}
+
+.achievements-intro-title:after {
+    border-top: 2px solid #fff;
+    border-image: linear-gradient(to left, #000 0%, #fff 80%);
+    border-image-slice: 1;
+    margin-left: 14px;
+    width: 60px;
+}
+
+
+.achievements-intro-column {
+    color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-row-gap: 8px;
+}
+
+.achievements-intro-text {
+    color: #9F2122;
+    font-size: 32px;
+    line-height: 37px;
+    margin: 24px 0 0;
+}
+
+.achievemnts-paragraph {
+    color: #fff;
+    font-family: 'lt-font-3';
+    font-size: 14px;
+    margin: 0;
+}
+
+.row-label {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.row-paragraph {
+    margin: 0;
+    font-family: 'lt-font-3';
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.news-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    text-transform: capitalize;
+    font-family: 'lt-font';
+    color: #fff;
+    margin: 30px 0 48px;
+    padding: 49px 0 0;
+}
+
+.news-date {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.news-label {
+    text-align: center;
+    line-height: 25px;
+    font-weight: 400;
+    font-size: 22px;
+    padding: 0 40px;
+}
+
+.news-read-more {
+    color: #fff;
+    font-weight: 400;
+    text-underline-position: from-font;
+    font-size: 20px;
+    line-height: 34px;
+}
+
+.footer-paragraph {
+    margin: 45px 0 0;
+    font-family: 'lt-font';
+    font-size: 14px;
+    line-height: 24px;
+    width: 255px;
+}
+
+.social-medias {
+    margin-top: 24px;
+}
+
+.social-media-link {
+    text-decoration: none;
+}
+
+.footer-label {
+    font-family: 'lt-font-2';
+    font-size: 20px;
+}
+
+.footer-list {
+    color: #fff;
+    font-family: 'lt-font';
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.footer-list-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-rights {
+    font-size: 14px;
+    font-family: 'lt-font';
+    font-weight: 400;
+}
+
+.footer-law {
+    font-family: 'lt-font';
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Buttons */
+
+.hamburger {
+  height: 24px;
+  width: 26px;
+}
+
+.menu-icon {
+    margin: 0 -7px 0 0;
+    width: 42px;
+    height: 42px;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.learn-more-btn {
+    width: 148px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    background: #1F1F1F;
+    border-radius: 6px;
+    justify-self: center;
+    margin-top: 33px;
+    font-family: 'lt-font-3';
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+/* Layout */
+
+
+.main-grid {
+    background: #FFFAFA;
+}
+  
+.header-grid {
+    display: flex;
+    justify-content: space-between;
+    height: 55px;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 20px;
+    z-index: 2;
+}
+
+.logo {
+    height: 25px;
+    width: auto;
+}  
+
+.logo-lg {
+    display: none;
+}
+
+.nav-bar {
+    display: none;
+}
+
+.intro-grid {
+    background-image: url(https://cdn.rebasive.net/livingstone-templeton/intro-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -76px;
+    max-width: 100%;
+}
+
+.intro-column {
+    background: rgba(153, 24, 42, 0.5);
+    padding: 212px 0 152px;
+    display: grid;
+}
+
+.intro-slide-column {
+    display: none;
+}
+
+.slides {
+    margin: 64px 0 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+.story-column {
+    display: grid;
+    grid-template-rows: auto auto auto 1fr;
+    justify-items: center;
+    padding: 0 20px;
+}
+
+.how-column {
+    margin-top: 84px;
+    display: grid;
+    justify-items: center;
+    background: #000;
+    padding: 38px 37px 55px;
+}
+
+.how-block {
+    color: #fff;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    margin-top: 45px;
+}
+.how-block-img-1{
+width: 121px;
+height: 80px;
+}
+.how-block-img-2{
+    width: 90px;
+    height: 80px;
+    }
+.companies-column {
+    display: grid;
+    justify-items: center;
+    margin: 100px 20px 0;
+}
+
+.companies-intro-text {
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 28px 0 25px;
+    font-size: 29px;
+    padding: 0;
+}
+
+.companies-block {
+    background: #fff;
+    border-radius: 4px;
+    display: grid;
+    text-align: center;
+    padding: 40px 25px 0;
+    margin-top: 20px;
+}
+
+.companies-image-name {
+    height: 30px;
+}
+
+.achievements-column {
+    margin-top: 100px;
+    padding: 28px 0 65px;
+    background: #000;
+    display: grid;
+    justify-items: center;
+}
+
+.achievements-row {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 27px;
+    align-items: center;
+    color: #fff;
+    margin-top: 45px;
+    width: 245px;
+}
+
+.row-icon {
+    grid-column: 1;
+    width: 27px;
+    height: 32px;
+}
+
+.row-info {
+    display: flex;
+    flex-direction: column;
+    font-family: 'lt-font-2';
+    font-weight: 700;
+}
+
+.news-image-lg {
+    display: none;
+}
+
+.news-column {
+    margin: 100px 0 0;
+    padding: 0 20px;
+    display: grid;
+    justify-items: center;
+}
+
+.news-block {
+    background: url(https://cdn.rebasive.net/livingstone-templeton/Latest-News.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    margin-top: 20px;
+    width: 335px;
+}
+
+.companies-intro-title{
+    margin-bottom: 10px;
+}
+
+.footer-grid {
+    margin-top: 100px;
+    background: url(https://cdn.rebasive.net/livingstone-templeton/footer-logo-bg.svg), #000;
+    background-repeat: no-repeat;
+    background-size: 329px 347px;
+    background-position: right bottom;
+    color: #fff;
+    padding: 58px 21px 44px;
+    display: grid;
+}
+
+.footer-logo {
+    height: 34px;
+    width: auto;
+}
+
+.footer-lists {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-row-gap: 20px;
+}
+
+.footer-col-1 {
+    display: grid;
+}
+
+.footer-col-2 {
+    display: grid;
+    grid-row-gap: 24px;
+    margin-top: 34px;
+}
+
+.footer-col-3 {
+    display: grid;
+    grid-row-gap: 24px;
+    margin-top: 34px;
+}
+
+.footer-col-4 {
+    display: grid;
+    grid-row-gap: 24px;
+    margin-top: 34px;
+}
+
+.reach-us {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    grid-row-gap: 24px;
+    flex-direction: column;
+    color: #D9DBE1;
+}
+
+.reach-email {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    grid-column-gap: 15px;
+}
+
+.reach-no {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    grid-column-gap: 15px;
+}
+
+.reach-address {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    align-items: baseline;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    grid-column-gap: 15px;
+}
+
+.reach-paragraph {
+    width: 160px;
+    margin: 0;
+}
+
+.footer-col-5 {
+    margin-top: 73px;
+    display: grid;
+    text-align: center;
+    color: #D9DBE1;
+}
+
+.footer-laws {
+    display: flex;
+    justify-content: center;
+    grid-column-gap: 8px;
+}
+
+.footer-privacy:before {
+    content: "";
+    margin-right: 8px;
+    border-left: 1px solid #D9DBE1;
+    height: 9px;
+}
+
+.footer-privacy:after {
+    content: "";
+  
+    margin-left: 8px;
+    border-left: 1px solid #D9DBE1;
+    height: 9px;
+}
+
+.footer-privacy {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (min-width: 1366px) {
+    .header-grid {
+        margin: 0;
+        height: 95px;
+        padding: 0 104px;
+        z-index: unset;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 14px rgba(165, 165, 165, 0.25);
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo-lg {
+        display: block;
+        height: 34px;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .nav-bar {
+        display: flex;
+        list-style: none;
+        grid-column-gap: 48px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav {
+    }
+
+    .nav-list {
+        color: #18191F;
+        font-family: 'lt-font';
+        font-size: 17px;
+    }
+
+    .nav-list-link {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .intro-grid {
+        margin: 0 104px;
+        background: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .intro-column {
+        background: none;
+        padding: 193px 0 0;
+        width: 300px;
+    }
+
+    .intro-text {
+        display: contents;
+        color: #99182A;
+        -webkit-text-stroke: unset;
+        font-size: 76px;
+        line-height: 87px;
+        letter-spacing: 1px;
+    }
+
+    .speed {
+        margin: -87px 0 0 80px;
+        height: 158px;
+        width: auto;
+        letter-spacing: 2px;
+    }
+
+    .intro-paragraph {
+        color: #333333;
+        font-size: 20px;
+        line-height: 26px;
+        text-align: left;
+        width: 476px;
+        margin-top: -50px;
+        font-weight: 400;
+    }
+
+    .learn-more-btn {
+        width: 192px;
+        height: 56px;
+        justify-self: left;
+        margin-top: 20px;
+    }
+
+    .intro-slide-column {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .intro-slide-down {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+    }
+
+    .slide-img {
+        height: 342px;
+        width: 315px;
+    }
+
+    .intro-slide {
+        height: 100%;
+    }
+
+    .intro-slide-up {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+    }
+    .slide-col-title {
+        font-family: 'lt-font-2';
+        color: #3E3E3E;
+        text-transform: capitalize;
+        margin: 0;
+        text-align: center;
+        font-size: 42px;
+    }
+
+    .slide-paragraph {
+        font-family: 'lt-font';
+        font-weight: 400;
+        color: #626262;
+        margin: 0;
+        font-size: 18px;
+        text-align: center;
+        width: 345px;
+    }
+
+    .slide-column-info {
+        grid-column: 1;
+    }
+
+    .slides {
+        grid-column: 2;
+    }
+
+    
+
+    .slide-column {
+        margin: 122px 104px 0;
+        display: grid;
+        grid-template-columns: 542px auto;
+    }
+}
